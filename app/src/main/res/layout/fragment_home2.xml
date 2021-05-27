@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+        <View
+            android:id="@+id/bar_height"
+            android:layout_width="match_parent"
+            android:background="@color/cook_app_yellow"
+            android:layout_height="30dp"/>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:fitsSystemWindows="true"
+
+        android:id="@+id/tabs_home2"
+        app:tabMode="fixed"
+        app:tabGravity="center"
+        android:backgroundTint="@color/cook_app_yellow"
+        app:tabBackground="@color/cook_app_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/black"
+        app:tabIndicatorColor="@color/white"
+        android:background="?attr/colorPrimary" />
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_home2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+<!--    </ScrollView>-->
+
+</LinearLayout>

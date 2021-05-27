@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="18dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="请输入用户名"
+        android:textSize="16sp"
+        android:inputType="text"/>
+
+<!--    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton      android:id="@+id/button_showQMUIDialog"-->
+<!--        android:layout_width="100sp"-->
+<!--        android:layout_height="30sp"-->
+<!--        android:onClick="onClickShowQMUIDialog"-->
+<!--        android:text="@string/button_showQMUIDialog"/>-->
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickShowQMUIDialog"
+        android:layout_centerInParent="true"
+
+      android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        app:qmui_backgroundColor="@color/qmui_btn_blue_text"
+        android:text="进入设置页"
+        android:textColor="@color/white"
+        app:qmui_radius="8dp"/>
+
+
+    <com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>

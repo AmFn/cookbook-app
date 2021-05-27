@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/cook_app_yellow"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+
+        app:qmui_topbar_title_text_size="18sp"
+        android:layout_height="?attr/qmui_topbar_height"
+
+        />
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/qmui_config_color_background">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_edit_info_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView
+
+                android:id="@+id/setting_groupListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView>
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.qmuiteam.qmui.widget.QMUIRadiusImageView-->
+<!--                   android:layout_margin="16dp"-->
+<!--                    android:src="@mipmap/avatar"-->
+<!--                    app:qmui_corner_radius="24dp"-->
+<!--                    android:layout_width="48dp"-->
+<!--                    android:layout_alignParentLeft="true"-->
+
+<!--                    android:layout_height="48dp"/>-->
+<!--                <TextView-->
+<!--                    android:text="头像"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textColor="@color/cook_bg_grey"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:background="@color/gray_light"-->
+
+<!--                    android:layout_height="1dp"/>-->
+<!--            </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                    android:layout_margin="24dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    tools:text="昵称"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:text="头像"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textColor="@color/cook_bg_grey"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:background="@color/gray_light"-->
+
+<!--                    android:layout_height="1dp"/>-->
+<!--            </RelativeLayout>-->
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

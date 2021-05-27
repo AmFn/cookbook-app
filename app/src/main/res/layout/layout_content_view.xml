@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_content"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_detail_image"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="180dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                    app:qmui_border_color="@color/yellow_primary_dark"
+                    app:qmui_border_width="1dp"
+
+                    android:id="@+id/create_avatar"
+                    app:qmui_corner_radius="28dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/avatar"
+                    />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="用户名"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/create_username"
+                    android:layout_toRightOf="@+id/create_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="2021-9-19 发布"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/gray"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/create_avatar"
+                    android:layout_below="@+id/create_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/shine_button"
+                    android:layout_centerVertical="true"
+                    android:text="点击收藏"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/cook_bg_grey_dark"
+                    android:layout_height="wrap_content"/>
+                <com.xuexiang.xui.widget.button.shinebutton.ShineButton
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/shine_button"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    app:sb_checked_color="#f26d7d"
+                    app:sb_icon_image="@mipmap/icon_heart"
+                    app:sb_normal_color="@android:color/darker_gray" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_detail_content"
+                tools:text="山楂可降低胆固醇及血压、帮助消化；洛神花温性，含有丰富的柠檬酸、苹果酸及维他命A及E，能解除身体的疲劳感，对消化不良及皮肤粗糙也有帮助；而普洱茶清热利水、化痰消食、温养脾胃、有很好瘦身功效，咖啡因能帮助增强身体燃烧脂肪的能力，而茶多酚则更有效的协助脂肪的分解和消化。"
+                android:layout_width="match_parent"
+                android:textColor="@color/cook_bg_grey"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"/>
+
+          =
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_very_light"
+                android:layout_height="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:text="材料:"
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_materials_list"
+                android:layout_marginBottom="@dimen/dp_10"
+                tools:listitem="@layout/item_materials_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_very_light"
+                android:layout_height="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:text="步骤:"
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                />
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/rv_process_list"
+                   tools:listitem="@layout/item_processes_list"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+           </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_very_light"
+                android:layout_height="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cook_app_yellow"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        app:qmui_topbar_title_text_size="18sp"
+        android:layout_height="?attr/qmui_topbar_height"/>
+<ScrollView
+    android:layout_width="match_parent"
+
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/view"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/gray_very_light"
+            android:layout_height="220dp">
+            <RelativeLayout
+                android:id="@+id/uploadPicture"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+                <ImageView
+
+                    android:id="@+id/pic_cookbook"
+                    android:layout_width="match_parent"
+                    android:src="@mipmap/icon_add_pic"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/pic_cookbook"
+                    android:text="添加菜谱封面"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/cook_bg_grey"
+                   android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <EditText
+
+           android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="请输入菜品名称"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:text="美食故事:"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:text="请选择分类"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:layout_height="wrap_content"/>
+
+        <com.xuexiang.xui.widget.flowlayout.FlowTagLayout
+
+            android:id="@+id/myflowTagLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:ftl_check_mode="single"
+
+            app:ftl_entries="@array/tags_values"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:text="用料："
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/cook_context_black"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:text="步骤："
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/cook_context_black"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="220dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_very_light">
+                <ImageView
+
+
+                    android:layout_width="match_parent"
+                    android:src="@mipmap/icon_add_picture"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/cook_bg_grey"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

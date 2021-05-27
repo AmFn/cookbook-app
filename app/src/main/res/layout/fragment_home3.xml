@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/qmui_config_color_white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/top_yellow_container"
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:background="@color/cook_app_yellow">
+
+                <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                    android:id="@+id/my_avatar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:src="@mipmap/avatar"
+                    app:qmui_border_color="@color/white"
+                    app:qmui_border_width="2dp"
+                    app:qmui_corner_radius="40dp">
+
+                </com.qmuiteam.qmui.widget.QMUIRadiusImageView>
+
+                <TextView
+                    android:id="@+id/my_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/my_avatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="用户名"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/my_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/my_nickName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="少年只有凌云志，不负黄河万里流。"
+                    android:textColor="@color/cook_bg_grey" />
+
+            </RelativeLayout>
+
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+
+                android:id="@+id/my_fans_and_focus"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                app:xui_borderColor="@color/xui_config_color_pure_yellow"
+                app:xui_radius="8dp"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/foucs_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_focus_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="300"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_focus_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_focus_count"
+                        android:layout_centerHorizontal="true"
+                        android:text="我的关注"
+                        android:textColor="@color/gray" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray_very_light" />
+
+                <RelativeLayout
+                    android:id="@+id/fan_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_fans_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="20"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_fans_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_fans_count"
+                        android:layout_centerHorizontal="true"
+                        android:text="我的粉丝"
+                        android:textColor="@color/gray" />
+                </RelativeLayout>
+
+
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/my_bottom_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_fans_and_focus"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <com.xuexiang.xui.widget.layout.XUIRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    app:xui_borderColor="@color/gray_very_light"
+                    app:xui_radius="8dp">
+
+                    <com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView
+
+
+                        android:id="@+id/my_mGroupListView"
+                        android:paddingTop="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView>
+                </com.xuexiang.xui.widget.layout.XUIRelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
